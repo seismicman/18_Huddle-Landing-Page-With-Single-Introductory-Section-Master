@@ -24,7 +24,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 
 ### Links
 
-Solution URL: [https://seismicman.github.io/17_Ping-Coming-Soon-Page-Master/](https://seismicman.github.io/17_Ping-Coming-Soon-Page-Master/)
+Solution URL: [https://seismicman.github.io/18_Huddle-Landing-Page-With-Single-Introductory-Section-Master/](https://seismicman.github.io/18_Huddle-Landing-Page-With-Single-Introductory-Section-Master/)
 
 ## My process
 
