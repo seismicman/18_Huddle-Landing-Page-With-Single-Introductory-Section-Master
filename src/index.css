@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--Violet);
+  background-image: url("./assets/images/bg-desktop.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.master {
+  width: 100%;
+  display: flex;
+  color: var(--White);
+}
+
+.left-side {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  width: 25%;
+  margin-top: 3rem;
+  margin-left: 9.5rem;
+  margin-bottom: 5.5rem;
+}
+
+.illustration img {
+  margin-left: 9.5rem;
+  width: 80%;
+}
+
+.right-side {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  margin-top: 15rem;
+}
+
+.title {
+  font-family: "Poppins";
+  max-width: 30rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.description {
+  font-family: "Open Sans";
+  max-width: 32rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+.btn {
+  background-color: var(--White);
+  color: var(--Violet);
+  width: 40%;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  font-family: "Open Sans";
+  font-size: 1.25rem;
+  margin-bottom: 11rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: var(--White);
+  background-color: var(--Soft-Magenta);
+}
+
+.social-icons {
+  width: 90%;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.twitter,
+.instagram {
+  border: thin solid var(--White);
+  border-radius: 50%;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.facebook {
+  border: thin solid var(--White);
+  border-radius: 50%;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+}
+
+.twitter:hover,
+.facebook:hover,
+.instagram:hover {
+  color: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
+  cursor: pointer;
+}
+
+@media only screen and (width <= 600px) {
+  body {
+    background-image: url("./assets/images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .master {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .left-side {
+    margin-top: 0.5rem;
+  }
+
+  .right-side {
+    margin-top: 4rem;
+    padding-left: 0;
+  }
+  .logo img {
+    width: 40%;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    margin-bottom: 3rem;
+  }
+  .illustration {
+    display: flex;
+    justify-content: center;
+  }
+  .illustration img {
+    margin-left: 0;
+  }
+  .title {
+    max-width: 20rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 1rem;
+    width: 19rem;
+  }
+
+  .btn {
+    width: 55%;
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+    margin-bottom: 3.5rem;
+  }
+  .social-icons {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .twitter,
+  .instagram {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .facebook {
+    padding: 0.45rem 0.7rem;
+    font-size: 0.9rem;
+  }
+}
